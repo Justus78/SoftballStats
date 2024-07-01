@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SoftballStats.Models
 {
@@ -6,6 +7,8 @@ namespace SoftballStats.Models
     {
         [Key]
         public int StatsID { get; set; }
+        [ForeignKey("Player")]
+        public int? PlayerID { get; set; }
         public int? GamesPlayed { get; set; } = 0;
         public int? AtBats { get; set; } = 0;
         public int? Hits { get; set; } = 0;

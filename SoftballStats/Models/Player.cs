@@ -12,12 +12,11 @@ namespace SoftballStats.Models
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
+        [Required]
+        public int Number { get; set; }
         public string? Position { get; set; }
         [ForeignKey("Team")]
         public int TeamID { get; set; }
-        [ForeignKey("Stats")]
-        public int StatsID { get; set; }
-        [Required]
-        public int Number { get; set; }
+       
     } // end player model
 } // end namespace

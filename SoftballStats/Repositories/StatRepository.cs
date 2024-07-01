@@ -1,6 +1,7 @@
 ﻿using SoftballStats.Models;
 using SoftballStats.Interfaces;
 using SoftballStats.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace SoftballStats.Repositories
 {
@@ -16,29 +17,32 @@ namespace SoftballStats.Repositories
             _context = context;
         } // end constructor
 
-        public Task<IEnumerable<Stats>> GetStatsAsync()
+        public async Task<IEnumerable<Stats>> GetStatsAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Stats.ToListAsync();
         }
 
-        public Task<Stats> GetStatAsync(int id)
+        public async Task<Stats> GetStatAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Stats.FirstOrDefaultAsync(s => s.StatsID == id);
         }
 
         public bool Add(Stats stats)
         {
-            throw new NotImplementedException();
+            _context.Stats.Add(stats);
+            return Save();
         }
 
         public bool Update(Stats stats)
         {
-            throw new NotImplementedException();
+            _context.Stats.Update(stats);
+            return Save();
         }
 
-        public bool Delete(int id)
+        public bool Delete(Stats stats)
         {
-            throw new NotImplementedException();
+            _context.Stats.Remove(stats);
+            return Save();
         }
 
         public bool Save()

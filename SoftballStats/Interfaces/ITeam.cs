@@ -9,7 +9,7 @@ namespace SoftballStats.Interfaces
 
         bool Add(Team team);
         bool Update(Team team);
-        bool Delete(int id);
+        bool Delete(Team team);
         bool Save();
     } // end interface  
 } // end namespace

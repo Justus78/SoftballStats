@@ -29,17 +29,20 @@ namespace SoftballStats.Repositories
 
         public bool Add(Team team)
         {
-            throw new NotImplementedException();
+            _context.Teams.Add(team);
+            return Save();
         }
 
         public bool Update(Team team)
         {
-            throw new NotImplementedException();
+            _context.Teams.Update(team);
+            return Save();
         }
 
-        public bool Delete(int id)
+        public bool Delete(Team team)
         {
-            throw new NotImplementedException();
+            _context.Remove(team);
+            return Save();
         }
 
         public bool Save()
