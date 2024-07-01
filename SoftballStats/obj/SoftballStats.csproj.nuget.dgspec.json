@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matt\\source\\repos\\SoftballStats\\SoftballStats\\SoftballStats.csproj": {}
+    "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\SoftballStats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matt\\source\\repos\\SoftballStats\\SoftballStats\\SoftballStats.csproj": {
+    "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\SoftballStats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matt\\source\\repos\\SoftballStats\\SoftballStats\\SoftballStats.csproj",
+        "projectUniqueName": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\SoftballStats.csproj",
         "projectName": "SoftballStats",
-        "projectPath": "C:\\Users\\Matt\\source\\repos\\SoftballStats\\SoftballStats\\SoftballStats.csproj",
+        "projectPath": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\SoftballStats.csproj",
         "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matt\\source\\repos\\SoftballStats\\SoftballStats\\obj\\",
+        "outputPath": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
