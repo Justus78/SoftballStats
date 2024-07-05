@@ -19,5 +19,5 @@ namespace SoftballStats.Controllers
         } // end index get
 
        
-    }
-}
+    } // end controller
+} // end namespace

@@ -4,9 +4,7 @@ using SoftballStats.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace SoftballStats.Repositories
-{
-
-    
+{    
     public class PlayerRepository : IPlayer
     {
         // member variable to hold the context

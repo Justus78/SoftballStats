@@ -17,6 +17,8 @@ namespace SoftballStats.Models
         public string? Position { get; set; }
         [ForeignKey("Team")]
         public int TeamID { get; set; }
+        [ValidateNever]
+        public Team Team { get; set; }
        
     } // end player model
 } // end namespace

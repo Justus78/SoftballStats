@@ -4,12 +4,12 @@ namespace SoftballStats.Interfaces
 {
     public interface IStats
     {
-        Task<IEnumerable<Stats>> GetStatsAsync();
-        Task<Stats> GetStatAsync(int id);
+        Task<IEnumerable<GameStats>> GetStatsAsync();
+        Task<GameStats> GetStatAsync(int id);
 
-        bool Add(Stats stats);
-        bool Update(Stats stats);
-        bool Delete(Stats stat);
+        bool Add(GameStats stats);
+        bool Update(GameStats stats);
+        bool Delete(GameStats stat);
         bool Save();
     } // end interface
 }// end namespace

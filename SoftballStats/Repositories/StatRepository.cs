@@ -17,29 +17,29 @@ namespace SoftballStats.Repositories
             _context = context;
         } // end constructor
 
-        public async Task<IEnumerable<Stats>> GetStatsAsync()
+        public async Task<IEnumerable<GameStats>> GetStatsAsync()
         {
             return await _context.Stats.ToListAsync();
         }
 
-        public async Task<Stats> GetStatAsync(int id)
+        public async Task<GameStats> GetStatAsync(int id)
         {
             return await _context.Stats.FirstOrDefaultAsync(s => s.StatsID == id);
         }
 
-        public bool Add(Stats stats)
+        public bool Add(GameStats stats)
         {
             _context.Stats.Add(stats);
             return Save();
         }
 
-        public bool Update(Stats stats)
+        public bool Update(GameStats stats)
         {
             _context.Stats.Update(stats);
             return Save();
         }
 
-        public bool Delete(Stats stats)
+        public bool Delete(GameStats stats)
         {
             _context.Stats.Remove(stats);
             return Save();

@@ -1,14 +1,22 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SoftballStats.Models
 {
-    public class Stats
+    public class GameStats
     {
         [Key]
         public int StatsID { get; set; }
+
         [ForeignKey("Player")]
         public int? PlayerID { get; set; }
+
+        public string? Opponent { get; set; }
+
+        [DataType(DataType.Date)]
+        public DateTime GameDate { get; set; }
+
         public int? GamesPlayed { get; set; } = 0;
         public int? AtBats { get; set; } = 0;
         public int? Hits { get; set; } = 0;
@@ -24,6 +32,6 @@ namespace SoftballStats.Models
         public int? HomeRuns { get; set; } = 0;
         public int? HitByPitch { get; set; } = 0;
         public int? SacrificeFly { get; set; } = 0;
-        public int?  SacrificeBunt { get; set; } = 0;
-    } // end class Stats
-} // end namespace SoftballStats.Models
+        public int? SacrificeBunt { get; set; } = 0;
+    }
+}

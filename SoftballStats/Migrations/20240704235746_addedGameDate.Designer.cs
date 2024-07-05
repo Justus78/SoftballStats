@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SoftballStats.Data;
 
@@ -11,9 +12,11 @@ using SoftballStats.Data;
 namespace SoftballStats.Migrations
 {
     [DbContext(typeof(StatContext))]
-    partial class StatContextModelSnapshot : ModelSnapshot
+    [Migration("20240704235746_addedGameDate")]
+    partial class addedGameDate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -119,8 +122,6 @@ namespace SoftballStats.Migrations
 
                     b.HasKey("PlayerID");
 
-                    b.HasIndex("TeamID");
-
                     b.ToTable("Players");
                 });
 
@@ -139,22 +140,6 @@ namespace SoftballStats.Migrations
                     b.HasKey("TeamID");
 
                     b.ToTable("Teams");
-                });
-
-            modelBuilder.Entity("SoftballStats.Models.Player", b =>
-                {
-                    b.HasOne("SoftballStats.Models.Team", "Team")
-                        .WithMany("Players")
-                        .HasForeignKey("TeamID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Team");
-                });
-
-            modelBuilder.Entity("SoftballStats.Models.Team", b =>
-                {
-                    b.Navigation("Players");
                 });
 #pragma warning restore 612, 618
         }

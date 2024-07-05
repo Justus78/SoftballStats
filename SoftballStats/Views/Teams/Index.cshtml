@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Team>
+
+    @{
+    ViewData["Title"] = "Teams";
+}
+
+<h1><a asp-controller="Teams" asp-action="Add">Add new team</a></h1>
+
+<ol>
+    @foreach (var team in Model)
+        {
+            <li><p>@team.TeamName</p></li>   
+        }
+</ol>
