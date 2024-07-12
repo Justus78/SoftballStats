@@ -1,0 +1,106 @@
+﻿@model AddStatViewModel
+@using SoftballStats.ViewModels
+
+@{
+    ViewData["Title"] = "Add Stats";
+};
+
+<h1> Add new game stats for @Model.Player.FirstName @Model.Player.LastName</h1>
+
+<form asp-action="AddStats" asp-controller="Stats" method="post">
+
+    <input type="hidden" id="Player.PlayerID" name="Player.PlayerID" asp-for="Player.PlayerID" />
+    <input type="hidden" id="Player.FirstName" name="Player.FirstName" asp-for="Player.FirstName" />
+    <input type="hidden" id="Player.LastName" name="Player.LastName" asp-for="Player.LastName" />
+
+    <div class="mb-3">
+        <label asp-for="Stats.Opponent" class="form-label">Opponent</label>
+        <input type="text" asp-for="Stats.Opponent" class="form-control" placeholder="Opponent"/>
+        <span asp-validation-for="Stats.Opponent" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.GameDate" class="form-label">Game Date</label>
+        <input type="date" asp-for="Stats.GameDate" class="form-control" placeholder="Game Date" />
+        <span asp-validation-for="Stats.GameDate" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.AtBats" class="form-label">At Bats</label>
+        <input type="text" asp-for="Stats.AtBats" class="form-control" placeholder="At Bats" />
+        <span asp-validation-for="Stats.AtBats" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.Hits" class="form-label">Hits</label>
+        <input type="text" asp-for="Stats.Hits" class="form-control" placeholder="Hits " />
+        <span asp-validation-for="Stats.Hits" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.Runs" class="form-label">Runs</label>
+        <input type="text" asp-for="Stats.Runs" class="form-control" placeholder="Runs Scored" />
+        <span asp-validation-for="Stats.Runs" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.RBIs" class="form-label">RBIs</label>
+        <input type="text" asp-for="Stats.RBIs" class="form-control" placeholder="RBIs" />
+        <span asp-validation-for="Stats.RBIs" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.Walks" class="form-label">Walks</label>
+        <input type="text" asp-for="Stats.Walks" class="form-control" placeholder="Walks" />
+        <span asp-validation-for="Stats.Walks" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.Strikeouts" class="form-label">Strikeouts</label>
+        <input type="text" asp-for="Stats.Strikeouts" class="form-control" placeholder="Strikeouts" />
+        <span asp-validation-for="Stats.Strikeouts" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.StolenBases" class="form-label">Stolen Bases</label>
+        <input type="text" asp-for="Stats.StolenBases" class="form-control" placeholder="Stolen Bases" />
+        <span asp-validation-for="Stats.StolenBases" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.Errors" class="form-label">Errors</label>
+        <input type="text" asp-for="Stats.Errors" class="form-control" placeholder="Errors" />
+        <span asp-validation-for="Stats.Errors" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.Singles" class="form-label">Singles</label>
+        <input type="text" asp-for="Stats.Singles" class="form-control" placeholder="Singles" />
+        <span asp-validation-for="Stats.Singles" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.Doubles" class="form-label">Doubles</label>
+        <input type="text" asp-for="Stats.Doubles" class="form-control" placeholder="Doubles" />
+        <span asp-validation-for="Stats.Doubles" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.Triples" class="form-label">Triples</label>
+        <input type="text" asp-for="Stats.Triples" class="form-control" placeholder="Triples" />
+        <span asp-validation-for="Stats.Triples" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.HomeRuns" class="form-label">Home Runs</label>
+        <input type="text" asp-for="Stats.HomeRuns" class="form-control" placeholder="Home Runs" />
+        <span asp-validation-for="Stats.HomeRuns" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.HitByPitch" class="form-label">Hit by Pitch</label>
+        <input type="text" asp-for="Stats.HitByPitch" class="form-control" placeholder="Errors" />
+        <span asp-validation-for="Stats.HitByPitch" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.SacrificeFly" class="form-label">Sacrifice Fly</label>
+        <input type="text" asp-for="Stats.SacrificeFly" class="form-control" placeholder="Sacrfice Fly" />
+        <span asp-validation-for="Stats.SacrificeFly" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stats.SacrificeBunt" class="form-label">Sacrifice Bunt</label>
+        <input type="text" asp-for="Stats.SacrificeBunt" class="form-control" placeholder="Sacrifice Bunt" />
+        <span asp-validation-for="Stats.SacrificeBunt" class="text-danger"></span>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Add Stats</button>
+    </div>
+</form>
+
+     

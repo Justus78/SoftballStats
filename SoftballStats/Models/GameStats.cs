@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SoftballStats.Models
@@ -17,7 +16,6 @@ namespace SoftballStats.Models
         [DataType(DataType.Date)]
         public DateTime GameDate { get; set; }
 
-        public int? GamesPlayed { get; set; } = 0;
         public int? AtBats { get; set; } = 0;
         public int? Hits { get; set; } = 0;
         public int? Runs { get; set; } = 0;

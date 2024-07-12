@@ -1,0 +1,83 @@
+﻿@model PlayerStatsViewModel
+@using SoftballStats.ViewModels
+
+@{
+    ViewData["Title"] = "Player Stats";
+}
+
+<h1>@Model.Player.FirstName @Model.Player.LastName</h1>
+<h2><a asp-action="AddStats" asp-controller="Stats" asp-route-id="@Model.Player.PlayerID">Add new game stats for @Model.Player.FirstName</a></h2>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Stat Name</th>
+            <th>Stat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>On Base Percentage</td>
+            <td>@Model.OnBasePercentage</td>
+        </tr>
+        <tr>
+            <td>Slugging Percentage</td>
+            <td>@Model.SluggingPercentage</td>
+        </tr>
+        <tr>
+            <td>Batting Average</td>
+            <td>@Model.BattingAverage</td>
+        </tr>
+        <tr>
+            <td>At Bats</td>
+            <td>@Model.TotalAtBats</td>
+        </tr>
+        <tr>
+            <td>Hits</td>
+            <td>@Model.TotalHits</td>
+        </tr>
+        <tr>
+            <td>Runs</td>
+            <td>@Model.TotalRuns</td>
+        </tr>
+        <tr>
+            <td>RBI</td>
+            <td>@Model.TotalRBIs</td>
+        </tr>
+        <tr>
+            <td>Walks</td>
+            <td>@Model.TotalWalks</td>
+        </tr>
+        <tr>
+            <td>Strikeouts</td>
+            <td>@Model.TotalStrikeouts</td>
+        </tr>
+        <tr>
+            <td>Stolen Bases</td>
+            <td>@Model.TotalStolenBases</td>
+        </tr>
+        <tr>
+            <td>Errors</td>
+            <td>@Model.TotalErrors</td>
+        </tr>
+        <tr>
+            <td>Singles</td>
+            <td>@Model.TotalSingles</td>
+        </tr>
+        <tr>
+            <td>Doubles</td>
+            <td>@Model.TotalDoubles</td>
+        </tr>
+        <tr>
+            <td>Triples</td>
+            <td>@Model.TotalTriples</td>
+        </tr>
+        <tr>
+            <td>Home Runs</td>
+            <td>@Model.TotalHomeRuns</td>
+        </tr>
+    </tbody>
+</table>
+
+
+

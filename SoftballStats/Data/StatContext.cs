@@ -11,6 +11,6 @@ namespace SoftballStats.Data
 
         public DbSet<Player> Players { get; set; }
         public DbSet<Team> Teams { get; set; }
-        public DbSet<GameStats> Stats { get; set; }
+        public DbSet<GameStats> GameStats { get; set; }
     } // end Context Class
 } // end namespace

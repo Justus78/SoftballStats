@@ -21,7 +21,7 @@
             <tr>
                 <td>@player.FirstName</td>
                 <td>@player.LastName</td>
-                <td><a class="btn btn-primary" asp-action="ViewStats" asp-controller="Player" asp-route-id="@player.PlayerID">View Stats</a></td>
+                <td><a class="btn btn-primary" asp-action="PlayerStats" asp-controller="Stats" asp-route-id="@player.PlayerID">View Stats</a></td>
                 <td>
                     <a class="btn btn-primary" asp-controller="Player" asp-action="Edit" asp-route-id="@player.PlayerID">Edit</a>
                     <a class="btn btn-primary" asp-controller="Player" asp-action="Delete" asp-route-id="@player.PlayerID">Delete</a>

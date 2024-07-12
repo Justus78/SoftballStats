@@ -4,7 +4,7 @@ namespace SoftballStats.Interfaces
 {
     public interface IStats
     {
-        Task<IEnumerable<GameStats>> GetStatsAsync();
+        Task<IEnumerable<GameStats>> GetStatsAsync(int id);
         Task<GameStats> GetStatAsync(int id);
 
         bool Add(GameStats stats);
