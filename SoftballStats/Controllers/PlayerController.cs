@@ -95,7 +95,7 @@ namespace SoftballStats.Controllers
         } // end player Delete
 
         [HttpPost]
-        public IActionResult Delete(Player player)
+        public async Task<IActionResult> Delete(Player player)
         {
             _playerRepository.Delete(player);
             return RedirectToAction("Index");

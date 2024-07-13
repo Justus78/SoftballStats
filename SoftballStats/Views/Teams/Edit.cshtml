@@ -1,8 +1,8 @@
 ﻿@model Team
 
-<h1> Add a new team below</h1>
+<h1> Edit team  @Model.TeamName below</h1>
 
-<form asp-action="Add" asp-controller="Teams" method="post">
+<form asp-action="Edit" asp-controller="Teams" method="post">
     <input type="hidden" id="TeamID" name="TeamID" asp-for="TeamID" />
 
     <div class="mb-3">
