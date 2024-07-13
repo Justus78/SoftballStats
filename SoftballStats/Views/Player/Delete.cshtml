@@ -1,0 +1,15 @@
+﻿@model Player
+@{
+    ViewData["Title"] = "Delete Player";
+}
+
+
+<h2 >Confirm Deletion</h2>
+<h3 >@Model.FirstName @Model.LastName</h3>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="PlayerID" />
+
+    <button type="submit" class="btn btn-primary">Delete</button>
+    <a asp-controller="Player" asp-action="Index" class="btn btn-primary">Cancel</a>
+</form>

@@ -39,8 +39,8 @@ namespace SoftballStats.Repositories
         }
 
         public bool Delete(Player player)
-        {
-            _context.Remove(player);
+        {            
+            if (player != null) { _context.Remove(player); }
             return Save();
         }
 
