@@ -6,7 +6,8 @@
 }
 
 <h1>@Model.Player.FirstName @Model.Player.LastName</h1>
-<h2><a asp-action="AddStats" asp-controller="Stats" asp-route-id="@Model.Player.PlayerID">Add new game stats for @Model.Player.FirstName</a></h2>
+<h2><a asp-action="AddStats" asp-controller="Stats" asp-route-id="@Model.Player.PlayerID">Add new game stats</a></h2>
+<h2><a asp-action="Games" asp-controller="Stats" asp-route-id="@Model.Player.PlayerID"> View Games </a></h2>
 <div class="container w-50">
     <table class="table table-striped table-bordered">
         <thead>

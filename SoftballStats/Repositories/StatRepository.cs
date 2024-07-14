@@ -24,7 +24,7 @@ namespace SoftballStats.Repositories
 
         public async Task<GameStats> GetStatAsync(int id)
         {
-            return await _context.GameStats.FirstOrDefaultAsync(s => s.StatsID == id);
+            return await _context.GameStats.Include(p => p.Player).FirstOrDefaultAsync(s => s.StatsID == id);
         }
 
         public bool Add(GameStats stats)

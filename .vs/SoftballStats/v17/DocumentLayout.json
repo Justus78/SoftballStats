@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Matt\\Desktop\\SoftballStats\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\teams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\teams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\stats\\games.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\stats\\games.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\teams\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\teams\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\stats\\playerstats.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\stats\\playerstats.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\controllers\\statscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\controllers\\statscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\stats\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\stats\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\teams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\teams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\teams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\teams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\player\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\player\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\stats\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\stats\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,102 +47,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Teams\\Edit.cshtml",
-              "RelativeDocumentMoniker": "SoftballStats\\Views\\Teams\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Teams\\Edit.cshtml",
-              "RelativeToolTip": "SoftballStats\\Views\\Teams\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAgAAAA",
+              "Title": "Games.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Stats\\Games.cshtml",
+              "RelativeDocumentMoniker": "SoftballStats\\Views\\Stats\\Games.cshtml",
+              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Stats\\Games.cshtml",
+              "RelativeToolTip": "SoftballStats\\Views\\Stats\\Games.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAABvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-13T23:15:50.162Z",
+              "WhenOpened": "2024-07-14T02:21:26.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Team.cs",
-              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Models\\Team.cs",
-              "RelativeDocumentMoniker": "SoftballStats\\Models\\Team.cs",
-              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Models\\Team.cs",
-              "RelativeToolTip": "SoftballStats\\Models\\Team.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T23:10:32.069Z",
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Stats\\Delete.cshtml",
+              "RelativeDocumentMoniker": "SoftballStats\\Views\\Stats\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Stats\\Delete.cshtml",
+              "RelativeToolTip": "SoftballStats\\Views\\Stats\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-14T02:12:13.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Teams\\Add.cshtml",
-              "RelativeDocumentMoniker": "SoftballStats\\Views\\Teams\\Add.cshtml",
-              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Teams\\Add.cshtml",
-              "RelativeToolTip": "SoftballStats\\Views\\Teams\\Add.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAHAAAA",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Stats\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SoftballStats\\Views\\Stats\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Stats\\Edit.cshtml",
+              "RelativeToolTip": "SoftballStats\\Views\\Stats\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-13T21:36:32.961Z",
+              "WhenOpened": "2024-07-13T23:53:13.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TeamsController.cs",
-              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Controllers\\TeamsController.cs",
-              "RelativeDocumentMoniker": "SoftballStats\\Controllers\\TeamsController.cs",
-              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Controllers\\TeamsController.cs",
-              "RelativeToolTip": "SoftballStats\\Controllers\\TeamsController.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAswEYAAAAfAAAA",
+              "Title": "StatsController.cs",
+              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Controllers\\StatsController.cs",
+              "RelativeDocumentMoniker": "SoftballStats\\Controllers\\StatsController.cs",
+              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Controllers\\StatsController.cs",
+              "RelativeToolTip": "SoftballStats\\Controllers\\StatsController.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAmwHsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T21:31:24.111Z",
+              "WhenOpened": "2024-07-13T23:29:31.152Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Teams\\Delete.cshtml",
-              "RelativeDocumentMoniker": "SoftballStats\\Views\\Teams\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Teams\\Delete.cshtml",
-              "RelativeToolTip": "SoftballStats\\Views\\Teams\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "PlayerStats.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Stats\\PlayerStats.cshtml",
+              "RelativeDocumentMoniker": "SoftballStats\\Views\\Stats\\PlayerStats.cshtml",
+              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Stats\\PlayerStats.cshtml",
+              "RelativeToolTip": "SoftballStats\\Views\\Stats\\PlayerStats.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-13T21:29:37.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Teams\\Index.cshtml",
-              "RelativeDocumentMoniker": "SoftballStats\\Views\\Teams\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Teams\\Index.cshtml",
-              "RelativeToolTip": "SoftballStats\\Views\\Teams\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-13T21:27:28.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Player\\Delete.cshtml",
-              "RelativeDocumentMoniker": "SoftballStats\\Views\\Player\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Player\\Delete.cshtml",
-              "RelativeToolTip": "SoftballStats\\Views\\Player\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-13T19:13:17.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Controllers\\PlayerController.cs",
-              "RelativeDocumentMoniker": "SoftballStats\\Controllers\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Controllers\\PlayerController.cs",
-              "RelativeToolTip": "SoftballStats\\Controllers\\PlayerController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwGMAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T23:51:37.231Z",
+              "WhenOpened": "2024-07-13T23:25:42.077Z",
               "EditorCaption": ""
             }
           ]

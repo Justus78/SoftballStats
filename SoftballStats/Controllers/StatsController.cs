@@ -76,5 +76,51 @@ namespace SoftballStats.Controllers
             };
             return View(addStatViewModel);
         } // end stat Add post
+
+        public async Task<IActionResult> Games(int id)
+        {
+            PlayerStatsViewModel games = new PlayerStatsViewModel()
+            {
+                Player = await _playerRepository.GetPlayerAsync(id),
+                Stats = await _statRepository.GetStatsAsync(id)
+            };
+            return View(games);
+        } // end games
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            GameStats gameStats = await _statRepository.GetStatAsync(id);
+            return View(gameStats);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(GameStats stat)
+        {
+            if (ModelState.IsValid)
+            {
+                _statRepository.Update(stat);
+                return RedirectToAction("Games", new { id = stat.PlayerID});
+            }
+            return View(stat);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            GameStats gameStats = await _statRepository.GetStatAsync(id);
+            return View(gameStats);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(GameStats stat)
+        {
+            if (ModelState.IsValid)
+            {
+                _statRepository.Delete(stat);
+                return RedirectToAction("Games", new { id = stat.PlayerID });
+            }
+            return View(stat);
+        }
     } // controller
 } // end namespace

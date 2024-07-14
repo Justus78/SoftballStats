@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SoftballStats.Models
@@ -10,6 +11,8 @@ namespace SoftballStats.Models
 
         [ForeignKey("Player")]
         public int? PlayerID { get; set; }
+        [ValidateNever]
+        public Player? Player { get; set; }
 
         public string? Opponent { get; set; }
 

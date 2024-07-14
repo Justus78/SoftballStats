@@ -1,0 +1,16 @@
+﻿@model GameStats
+@{
+
+    ViewData["Title"] = "Delete Stats";
+}
+
+<h2>Confirm Deletion</h2>
+<h3>For game with @Model.Opponent</h3>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="StatsID" />
+    <input type="hidden" id="PlayerID" name="PlayerID" asp-for="PlayerID" /> 
+
+    <button type="submit" class="btn btn-primary">Delete</button>
+    <a asp-controller="Stats" asp-action="PlayerStats" asp-route-itemid="@Model.PlayerID" class="btn btn-primary">Cancel</a>
+</form>

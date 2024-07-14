@@ -46,6 +46,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcQWRkU3RhdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Stats/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Stats/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Stats/Games.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcR2FtZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Stats/PlayerStats.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcUGxheWVyU3RhdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

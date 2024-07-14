@@ -7,9 +7,9 @@
 <h2 >Confirm Deletion</h2>
 <h3 >@Model.TeamName</h3>
 
-<form asp-action="Delete" method="post">
+<form asp-action="Delete" asp-controller="Team" method="post">
     <input type="hidden" asp-for="TeamID" />
 
     <button type="submit" class="btn btn-primary">Delete</button>
-    <a asp-controller="Teams" asp-action="Index" class="btn btn-primary">Cancel</a>
+    <a asp-controller="Teams" asp-action="Delete" class="btn btn-primary">Cancel</a>
 </form>
