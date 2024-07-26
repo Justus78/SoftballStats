@@ -1,0 +1,34 @@
+﻿@using SoftballStats.ViewModels
+@model RegisterViewModel
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+<form method="post" asp-action="Register">
+    <div class="mb-3">
+        <label asp-for="UserName" class="">UserName:</label>
+        <input asp-for="UserName" class="form-control" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Password" class="">Password:</label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ConfirmPassword" class="">Confirm Password:</label>
+        <input asp-for="ConfirmPassword" class="form-control" />
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+
+    <div class="form-group">
+        <a asp-action="Login" asp-controller="Account">Already have an account? Login here</a>
+        </div>
+
+
+</form>

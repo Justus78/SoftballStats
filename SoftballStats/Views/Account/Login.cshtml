@@ -1,0 +1,33 @@
+﻿@model LoginViewModel
+@using SoftballStats.ViewModels
+
+@{
+        ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+<form method="post" asp-action="Login">
+    <div class="mb-3">
+        <label asp-for="UserName" class="">UserName:</label>
+        <input asp-for="UserName" class="form-control" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Password" class="">Password:</label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div>
+        <input type="checkbox" title="Remember Me" asp-for="RememberMe" class="form-check-inline" />
+        <label asp-for="RememberMe" class="form-check-inline">Remember Me</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+    <a class="btn btn-primary" asp-action="Index" asp-controller="Home">Cancel</a>
+
+    <div class="form-group">
+        <a asp-action="Register" asp-controller="Account">Don't have an account? Register here</a>
+        </div>
+</</form>

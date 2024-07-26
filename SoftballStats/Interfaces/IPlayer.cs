@@ -4,7 +4,7 @@ namespace SoftballStats.Interfaces
 {
     public interface IPlayer
     {
-        Task<IEnumerable<Player>> GetPlayersAsync();
+        Task<IEnumerable<Player>> GetPlayersAsync(string id);
         Task<Player> GetPlayerAsync(int id);
 
         bool Add(Player player);

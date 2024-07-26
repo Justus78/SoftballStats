@@ -15,6 +15,7 @@ namespace SoftballStats.ViewModels
         [ValidateNever]
         public List<Team> Teams { get; set; }
         public int TeamID { get; set; }
+        public string UserId { get; set; }
     } // end view model 
 } // end namespace
 

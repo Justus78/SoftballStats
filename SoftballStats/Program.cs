@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using SoftballStats.Data;
 using SoftballStats.Repositories;
 using SoftballStats.Interfaces;
+using Microsoft.AspNetCore.Identity;
+using SoftballStats.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +21,14 @@ builder.Services.AddScoped<IPlayer, PlayerRepository>();
 builder.Services.AddScoped<ITeam, TeamRepository>();
 builder.Services.AddScoped<IStats, StatRepository>();
 
+// identity framework
+builder.Services.AddIdentity<User, IdentityRole>
+    (// add password options here
+        
+    )
+    .AddEntityFrameworkStores<StatContext>()
+    .AddDefaultTokenProviders();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -34,6 +44,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

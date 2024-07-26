@@ -16,9 +16,9 @@ namespace SoftballStats.Controllers
             _teamRepository = teamRepository;
             _playerRepository = playerRepository;
         } // end constructor
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string id)
         {
-            IEnumerable<Player> players = await _playerRepository.GetPlayersAsync();
+            IEnumerable<Player> players = await _playerRepository.GetPlayersAsync(id);
             return View(players);
         } // end index get
 
