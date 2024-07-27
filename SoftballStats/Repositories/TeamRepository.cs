@@ -17,9 +17,9 @@ namespace SoftballStats.Repositories
             _context = context;
         } // end constructor
 
-        public async Task<IEnumerable<Team>> GetTeamsAsync()
+        public async Task<IEnumerable<Team>> GetTeamsAsync(string id)
         {
-            return await _context.Teams.ToListAsync();
+            return await _context.Teams.Where(u => u.UserID == id).ToListAsync();
         }
 
         public async Task<Team> GetTeamAsync(int id)

@@ -17,14 +17,19 @@ namespace SoftballStats.Controllers
         } // end constructor
         public async Task<IActionResult> Index()
         {
-            IEnumerable<Team> teams = await _teamRepository.GetTeamsAsync();
+            var user = await _userManager.GetUserAsync(User);
+            IEnumerable<Team> teams = await _teamRepository.GetTeamsAsync(user.Id);
             return View("Index", teams);
         } // end index get
 
         [HttpGet]
         public async Task<IActionResult> Add()
         {
-            var team = new Team();
+            var user = await _userManager.GetUserAsync(User);
+            var team = new Team()
+            {
+                UserID = user.Id
+            };
             return View(team);
         } // end team Add get
 

@@ -10,7 +10,8 @@ namespace SoftballStats.Controllers
     {
         private readonly IPlayer _playerRepository;
         private readonly ITeam _teamRepository;
-        private readonly UserManager<User> _userManager;
+        private readonly UserManager<User> _userManager;       
+        
         
         public PlayerController(IPlayer playerRepository, ITeam teamRepository, UserManager<User> userManager)
         {
@@ -30,16 +31,16 @@ namespace SoftballStats.Controllers
         public async Task<IActionResult> Add()
         {
             var user = await _userManager.GetUserAsync(User);
-            var player = new PlayerViewModel() { Teams = (List<Team>)await _teamRepository.GetTeamsAsync(),  UserId = user.Id};
+            var player = new PlayerViewModel() { Teams = (List<Team>)await _teamRepository.GetTeamsAsync(user.Id),  UserId = user.Id};
             return View(player);
         } // end player Add get
 
         [HttpPost]
         public async Task<IActionResult> Add(PlayerViewModel playerVM, int selectedTeam)
         {
+
             if (ModelState.IsValid)
             {
-
                 Player player = new Player
                 {
                     PlayerID = playerVM.PlayerID,
@@ -55,6 +56,8 @@ namespace SoftballStats.Controllers
                 return RedirectToAction("Index");
             }
 
+            var user = await _userManager.GetUserAsync(User);
+
             playerVM = new PlayerViewModel
             {
                 PlayerID = playerVM.PlayerID,
@@ -62,7 +65,7 @@ namespace SoftballStats.Controllers
                 LastName = playerVM.LastName,
                 Number = playerVM.Number,
                 Position = playerVM.Position,
-                Teams = (List<Team>)await _teamRepository.GetTeamsAsync(),
+                Teams = (List<Team>)await _teamRepository.GetTeamsAsync(user.Id),
                 UserId = playerVM.UserId
             };
             return View(playerVM);
@@ -72,6 +75,7 @@ namespace SoftballStats.Controllers
         public async Task<IActionResult> Edit(int id)
         {
             Player player = await _playerRepository.GetPlayerAsync(id);
+            var user = await _userManager.GetUserAsync(User);
             var playerVM = new PlayerViewModel
             {
                 PlayerID = player.PlayerID,
@@ -79,7 +83,7 @@ namespace SoftballStats.Controllers
                 LastName = player.LastName,
                 Number = player.Number,
                 Position = player.Position,
-                Teams = (List<Team>)await _teamRepository.GetTeamsAsync(),
+                Teams = (List<Team>)await _teamRepository.GetTeamsAsync(user.Id),
                 UserId = player.UserID
             };
             return View(playerVM);
@@ -105,6 +109,8 @@ namespace SoftballStats.Controllers
                 return RedirectToAction("Index");
             }
 
+            var user = await _userManager.GetUserAsync(User);
+
             playerVM = new PlayerViewModel
             {
                 PlayerID = playerVM.PlayerID,
@@ -112,7 +118,7 @@ namespace SoftballStats.Controllers
                 LastName = playerVM.LastName,
                 Number = playerVM.Number,
                 Position = playerVM.Position,
-                Teams = (List<Team>)await _teamRepository.GetTeamsAsync(),
+                Teams = (List<Team>)await _teamRepository.GetTeamsAsync(user.Id),
                 UserId = playerVM.UserId
             };
             return View(playerVM);

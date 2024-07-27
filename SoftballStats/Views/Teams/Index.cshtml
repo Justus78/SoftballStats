@@ -19,8 +19,8 @@
             <tr>
                 <td>@team.TeamName</td>
                 <td>
-                    <a asp-controller="Teams" asp-action="Edit" asp-route-id="@team.TeamID">Edit</a>
-                    <a asp-controller="Teams" asp-action="Delete" asp-route-id="@team.TeamID">Delete</a>
+                    <a class="btn btn-primary" asp-controller="Teams" asp-action="Edit" asp-route-id="@team.TeamID">Edit</a>
+                    <a class="btn btn-primary" asp-controller="Teams" asp-action="Delete" asp-route-id="@team.TeamID">Delete</a>
                 </td>
             </tr>
         }
