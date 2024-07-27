@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SoftballStats.Repositories;
 using SoftballStats.Models;
 using SoftballStats.Interfaces;
 using SoftballStats.ViewModels;
+using Microsoft.AspNetCore.Identity;
 
 namespace SoftballStats.Controllers
 {
@@ -10,22 +10,27 @@ namespace SoftballStats.Controllers
     {
         private readonly IPlayer _playerRepository;
         private readonly ITeam _teamRepository;
+        private readonly UserManager<User> _userManager;
         
-        public PlayerController(IPlayer playerRepository, ITeam teamRepository)
+        public PlayerController(IPlayer playerRepository, ITeam teamRepository, UserManager<User> userManager)
         {
             _teamRepository = teamRepository;
             _playerRepository = playerRepository;
+            _userManager = userManager;
+
         } // end constructor
-        public async Task<IActionResult> Index(string id)
+        public async Task<IActionResult> Index()
         {
-            IEnumerable<Player> players = await _playerRepository.GetPlayersAsync(id);
+            var user = await _userManager.GetUserAsync(User);
+            IEnumerable<Player> players = await _playerRepository.GetPlayersAsync(user.Id);
             return View(players);
         } // end index get
 
         [HttpGet]
         public async Task<IActionResult> Add()
         {
-            var player = new PlayerViewModel() { Teams = (List<Team>)await _teamRepository.GetTeamsAsync() };
+            var user = await _userManager.GetUserAsync(User);
+            var player = new PlayerViewModel() { Teams = (List<Team>)await _teamRepository.GetTeamsAsync(),  UserId = user.Id};
             return View(player);
         } // end player Add get
 
@@ -34,19 +39,32 @@ namespace SoftballStats.Controllers
         {
             if (ModelState.IsValid)
             {
+
                 Player player = new Player
                 {
                     PlayerID = playerVM.PlayerID,
                     FirstName = playerVM.FirstName,
                     LastName = playerVM.LastName,
                     Number = playerVM.Number,
-                    Position = playerVM.Position,      
-                    TeamID = selectedTeam
+                    Position = playerVM.Position,
+                    TeamID = selectedTeam,
+                    UserID = playerVM.UserId
                 };
                 _playerRepository.Add(player);
 
                 return RedirectToAction("Index");
             }
+
+            playerVM = new PlayerViewModel
+            {
+                PlayerID = playerVM.PlayerID,
+                FirstName = playerVM.FirstName,
+                LastName = playerVM.LastName,
+                Number = playerVM.Number,
+                Position = playerVM.Position,
+                Teams = (List<Team>)await _teamRepository.GetTeamsAsync(),
+                UserId = playerVM.UserId
+            };
             return View(playerVM);
         } // end player Add post
 
@@ -61,7 +79,8 @@ namespace SoftballStats.Controllers
                 LastName = player.LastName,
                 Number = player.Number,
                 Position = player.Position,
-                Teams = (List<Team>)await _teamRepository.GetTeamsAsync()
+                Teams = (List<Team>)await _teamRepository.GetTeamsAsync(),
+                UserId = player.UserID
             };
             return View(playerVM);
         } // end player Edit get
@@ -78,12 +97,24 @@ namespace SoftballStats.Controllers
                     LastName = playerVM.LastName,
                     Number = playerVM.Number,
                     Position = playerVM.Position,
-                    TeamID = selectedTeam
+                    TeamID = selectedTeam,
+                    UserID = playerVM.UserId
                 };
                 _playerRepository.Update(player);
 
                 return RedirectToAction("Index");
             }
+
+            playerVM = new PlayerViewModel
+            {
+                PlayerID = playerVM.PlayerID,
+                FirstName = playerVM.FirstName,
+                LastName = playerVM.LastName,
+                Number = playerVM.Number,
+                Position = playerVM.Position,
+                Teams = (List<Team>)await _teamRepository.GetTeamsAsync(),
+                UserId = playerVM.UserId
+            };
             return View(playerVM);
         } // end player Edit post
 

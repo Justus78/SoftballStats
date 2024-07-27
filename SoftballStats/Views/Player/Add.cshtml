@@ -5,6 +5,7 @@
 
 <form asp-action="Add" asp-controller="Player" method="post">
     <input type="hidden" id="PlayerID" name="PlayerID" asp-for="PlayerID" />
+    <input type="hidden" id="UserId" name="UserId" asp-for="UserId" />
     <div class="mb-3">
         <label asp-for="FirstName" class="form-label">First Name</label>
         <input type="text" asp-for="FirstName" class="form-control" placeholder="First name"/>

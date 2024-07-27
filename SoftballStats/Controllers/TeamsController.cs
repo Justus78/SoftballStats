@@ -1,18 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SoftballStats.Repositories;
 using SoftballStats.Models;
-using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using SoftballStats.Interfaces;
+using Microsoft.AspNetCore.Identity;
 
 namespace SoftballStats.Controllers
 {
     public class TeamsController : Controller
     {
         private readonly ITeam _teamRepository;
+        private readonly UserManager<User> _userManager;
 
-        public TeamsController (ITeam teamRepository)
+        public TeamsController (ITeam teamRepository, UserManager<User> userManager)
         {
             _teamRepository = teamRepository;
+            _userManager = userManager;
         } // end constructor
         public async Task<IActionResult> Index()
         {
