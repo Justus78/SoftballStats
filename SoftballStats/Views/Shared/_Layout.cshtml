@@ -42,7 +42,9 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout" method="post">Logout</a>                                
                             </li>
-                            <li><span>@User.Identity.Name</span></li>
+                            <li action="nav-item">
+                                <span>@User.Identity.Name</span>
+                            </li>
                         }
                         else
                         {

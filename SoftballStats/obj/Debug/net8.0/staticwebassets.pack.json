@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\SoftballStats.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\Images\\bg-01.jpg",
+      "PackagePath": "staticwebassets\\Images\\bg-01.jpg"
+    },
+    {
       "Id": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
