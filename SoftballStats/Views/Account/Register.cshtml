@@ -4,11 +4,60 @@
 @{
     ViewBag.Title = "Register";
 }
+@{
+    Layout = null;
+}
 
-<h2>Register</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SoftballStats</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SoftballStats.styles.css" asp-append-version="true" />
+</head>
+<body>
 
 <form method="post" asp-action="Register">
-    <div class="mb-3">
+
+    <div class="register-container">
+        <div class="wrapper">
+            <div class="register-wrapper">
+                <div class="register-header">Register</div>
+                <div class="register-form">
+
+                    <div class="register-input-wrapper">
+                        <label class="register-label"></label>
+                        <input type="text" class="register-input-field" asp-for="UserName" placeholder="Username" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                        <i class="bx bx-user icon"></i>
+                    </div>
+
+                    <div class="register-input-wrapper">
+                        <label class="register-label"></label>
+                        <input type="password" asp-for="Password" class="register-input-field" placeholder="Password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div>
+
+                    <div class="register-input-wrapper">
+                        <label class="register-label"></label>
+                        <input type="password" asp-for="ConfirmPassword" class="register-input-field" placeholder="Confirm Password" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div>
+
+                    <div class="register-input-wrapper">
+                        <input type="submit" class="register-input-login" value="Create Account">
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* <div class="mb-3">
         <label asp-for="UserName" class="">UserName:</label>
         <input asp-for="UserName" class="form-control" />
         <span asp-validation-for="UserName" class="text-danger"></span>
@@ -28,7 +77,16 @@
 
     <div class="form-group">
         <a asp-action="Login" asp-controller="Account">Already have an account? Login here</a>
+        </div> *@
+    </form>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - SoftballStats - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-
-
-</form>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
