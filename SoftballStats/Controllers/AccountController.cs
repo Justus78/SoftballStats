@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Client;
 using SoftballStats.Models;
 using SoftballStats.ViewModels;
 
@@ -38,7 +37,8 @@ namespace SoftballStats.Controllers
 
                 if (result.Succeeded)
                 {
-                    _signInManager.SignInAsync(user, false);
+                    //TempData["Success"] = "Account created successfully";
+                    await _signInManager.SignInAsync(user, false);
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -57,6 +57,10 @@ namespace SoftballStats.Controllers
         public IActionResult Login(string returnUrl)
         {
             var model = new LoginViewModel { ReturnUrl = returnUrl };
+            if (TempData["Success"] != null)
+            {
+                ViewBag.SuccessMessage = TempData["Success"].ToString();
+            }
             return View(model);
         } // end login get
 

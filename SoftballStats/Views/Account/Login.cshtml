@@ -4,9 +4,7 @@
 @{
         ViewBag.Title = "Login";
 }
-@{
-    Layout = null;
-}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,15 +13,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SoftballStats</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Login.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SoftballStats.styles.css" asp-append-version="true" />
 </head>
 <body>
     <div class="login-container">
-        <form method="post" asp-action="Login">   
+        <form method="post" asp-action="Login" asp-controller="Account">   
             <div class="wrapper">
                 <div class="login-wrapper">
                     <div class="login-header">Login</div>
+                    @* @if (ViewBag.SuccessMessage != null) {
+                            <div class="alert alert-success">
+                                @ViewBag.SuccessMessage
+                            </div>
+                    } *@
                     <div class="login-form">
 
                         <div class="input-wrapper">
@@ -46,7 +49,7 @@
                                 <label asp-for="RememberMe">Remember Me</label>
                             </div>
                             <div class="forgot">
-                                <a href="#">Forgot Password</a>
+                                <a class="login-a"href="#">Forgot Password</a>
                             </div>
                         </div>
 

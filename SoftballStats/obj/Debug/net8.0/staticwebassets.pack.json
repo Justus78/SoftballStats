@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\Images\\bg-01.jpg"
     },
     {
+      "Id": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\css\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Register.css"
+    },
+    {
       "Id": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

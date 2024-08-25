@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Matt\\Desktop\\SoftballStats\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|c:\\users\\matt\\desktop\\softballstats\\softballstats\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E42063C-E7B1-4EBF-82AE-81B83BC0D702}|SoftballStats\\SoftballStats.csproj|solutionrelative:softballstats\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,41 +54,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "SoftballStats\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "SoftballStats\\Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAABMAAAAAAAAAAAAiwEoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-28T18:38:54.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "SoftballStats\\Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "SoftballStats\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAACwAAAAAAAAAAAAAADsAAABQAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-27T22:57:53.636Z",
+              "WhenOpened": "2024-08-25T19:28:06.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "SoftballStats\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "SoftballStats\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAE4AAAAHAAAA",
+              "DocumentIndex": 1,
+              "Title": "Login.css",
+              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\css\\Login.css",
+              "RelativeDocumentMoniker": "SoftballStats\\wwwroot\\css\\Login.css",
+              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\css\\Login.css",
+              "RelativeToolTip": "SoftballStats\\wwwroot\\css\\Login.css",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAGUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-25T19:26:47.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "SoftballStats\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "SoftballStats\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-26T23:20:25.357Z"
+              "WhenOpened": "2024-08-25T19:25:01.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SoftballStats\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SoftballStats\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-25T00:34:36.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "SoftballStats\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "SoftballStats\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAkwEQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T21:11:38.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SoftballStats\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SoftballStats\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T21:08:30.685Z"
             }
           ]
         },
@@ -86,15 +136,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "SoftballStats\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "SoftballStats\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAOcAAAAAAAAAAAAAwP0AAAADAAAA",
+              "DocumentIndex": 0,
+              "Title": "Register.css",
+              "DocumentMoniker": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\css\\Register.css",
+              "RelativeDocumentMoniker": "SoftballStats\\wwwroot\\css\\Register.css",
+              "ToolTip": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\css\\Register.css",
+              "RelativeToolTip": "SoftballStats\\wwwroot\\css\\Register.css",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAGEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-28T00:56:53.548Z",
+              "WhenOpened": "2024-08-25T19:27:13.95Z",
               "EditorCaption": ""
             }
           ]

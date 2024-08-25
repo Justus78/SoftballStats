@@ -21,7 +21,7 @@ namespace SoftballStats.Controllers
             {
                 if (User.Identity.IsAuthenticated)
                 {
-                    return RedirectToAction("Index", "Player");
+                    return View("Index", "Home");
                 }
                 else
                 {
