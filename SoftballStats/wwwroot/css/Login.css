@@ -51,7 +51,7 @@
     border-radius: 0 0 20px 15px;
     background-color: white;
     color: black;
-    font-size: clamp(1rem, 6vw, 3rem);
+    font-size: clamp(1rem, 4vw, 2rem);
 }
 
 /*.login-header::before {
@@ -159,4 +159,46 @@
 
 .register a {
     font-weight: 500;
+}
+
+/* Media queries for adjusting the element based on different screen sizes */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .login-header {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .login-header {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .login-header {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .login-header {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .login-header {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

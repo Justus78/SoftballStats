@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SoftballStats.Models;
+using SoftballStats.Repositories;
+using SoftballStats.ViewModels;
 
 namespace SoftballStats.Controllers
 {
@@ -8,6 +10,9 @@ namespace SoftballStats.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly UserManager<User> _userManager;
+        private readonly PlayerRepository _playerRepository;
+        private readonly TeamRepository _teamRepository;
+        
 
         public HomeController(ILogger<HomeController> logger, UserManager<User> userManager)
         {
@@ -21,7 +26,13 @@ namespace SoftballStats.Controllers
             {
                 if (User.Identity.IsAuthenticated)
                 {
-                    return View("Index", "Home");
+                    //HomeViewModel homeViewModel = new HomeViewModel
+                    //{
+                    //    Players = _playerRepository.GetPlayersAsync(_userManager.GetUserId(User)).Result,
+                    //    Teams = _teamRepository.GetTeamsAsync(_userManager.GetUserId(User)).Result
+                    //};
+
+                    return View(/*homeViewModel*/);
                 }
                 else
                 {

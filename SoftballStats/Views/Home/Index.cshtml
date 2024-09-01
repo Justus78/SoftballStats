@@ -1,9 +1,44 @@
-﻿@{
+﻿@model HomeViewModel
+@using SoftballStats.ViewModels
+
+@{
     ViewData["Title"] = "Home Page";
 }
-<div class="homeContainer">
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="~/css/Home.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Welcome to the Main Content Area</h1>
+        <p>This is where your main content will go.</p>
+    </div>
 
-<h1>Welcome to Softball Stats</h1>
-
-
-</div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sidebar = document.querySelector('.sidebar');
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

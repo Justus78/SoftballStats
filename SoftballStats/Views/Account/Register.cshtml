@@ -4,19 +4,7 @@
 @{
     ViewBag.Title = "Register";
 }
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SoftballStats</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/Register.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/SoftballStats.styles.css" asp-append-version="true" />
-</head>
-<body>
-
+<link rel="stylesheet" href="~/css/Register.css" />
 <form method="post" asp-action="Register">
 
     <div class="register-container">
@@ -53,37 +41,5 @@
             </div>
         </div>
     </div>
-
-    @* <div class="mb-3">
-        <label asp-for="UserName" class="">UserName:</label>
-        <input asp-for="UserName" class="form-control" />
-        <span asp-validation-for="UserName" class="text-danger"></span>
-    </div>
-    <div class="mb-3">
-        <label asp-for="Password" class="">Password:</label>
-        <input asp-for="Password" class="form-control" />
-        <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
-    <div class="mb-3">
-        <label asp-for="ConfirmPassword" class="">Confirm Password:</label>
-        <input asp-for="ConfirmPassword" class="form-control" />
-        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Register</button>
-
-    <div class="form-group">
-        <a asp-action="Login" asp-controller="Account">Already have an account? Login here</a>
-        </div> *@
-    </form>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - SoftballStats - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-</body>
-</html>
+</form>
+    
