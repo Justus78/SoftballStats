@@ -286,3 +286,5 @@ C:\Users\Matt\Desktop\SoftballStats\SoftballStats\bin\Debug\net8.0\Microsoft.Owi
 C:\Users\Matt\Desktop\SoftballStats\SoftballStats\bin\Debug\net8.0\Microsoft.Owin.Security.OAuth.dll
 C:\Users\Matt\Desktop\SoftballStats\SoftballStats\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Matt\Desktop\SoftballStats\SoftballStats\bin\Debug\net8.0\Owin.dll
+C:\Users\Matt\Desktop\SoftballStats\SoftballStats\bin\Debug\net8.0\CloudinaryDotNet.dll
+C:\Users\Matt\Desktop\SoftballStats\SoftballStats\bin\Debug\net8.0\System.Text.Json.dll

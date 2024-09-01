@@ -3,6 +3,7 @@ using SoftballStats.Models;
 using SoftballStats.Interfaces;
 using SoftballStats.ViewModels;
 using Microsoft.AspNetCore.Identity;
+using SoftballStats.Services;
 
 namespace SoftballStats.Controllers
 {
@@ -10,13 +11,16 @@ namespace SoftballStats.Controllers
     {
         private readonly IPlayer _playerRepository;
         private readonly ITeam _teamRepository;
+        private readonly IPhotoService _photoService;
         private readonly UserManager<User> _userManager;       
         
         
-        public PlayerController(IPlayer playerRepository, ITeam teamRepository, UserManager<User> userManager)
+        public PlayerController(IPlayer playerRepository, ITeam teamRepository, 
+            UserManager<User> userManager, IPhotoService photoService)
         {
             _teamRepository = teamRepository;
             _playerRepository = playerRepository;
+            _photoService = photoService;
             _userManager = userManager;
 
         } // end constructor
@@ -41,11 +45,14 @@ namespace SoftballStats.Controllers
 
             if (ModelState.IsValid)
             {
+                var result = await _photoService.AddPhotoAsync(playerVM.Image);
+
                 Player player = new Player
                 {
                     PlayerID = playerVM.PlayerID,
                     FirstName = playerVM.FirstName,
                     LastName = playerVM.LastName,
+                    Image = result.Url.ToString(),
                     Number = playerVM.Number,
                     Position = playerVM.Position,
                     TeamID = selectedTeam,

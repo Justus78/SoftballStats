@@ -3,21 +3,23 @@ using Microsoft.AspNetCore.Mvc;
 using SoftballStats.Models;
 using SoftballStats.Repositories;
 using SoftballStats.ViewModels;
+using SoftballStats.Interfaces;
 
 namespace SoftballStats.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly UserManager<User> _userManager;
-        private readonly PlayerRepository _playerRepository;
-        private readonly TeamRepository _teamRepository;
+        private readonly IPlayer _playerRepository;
+        private readonly ITeam _teamRepository;
         
 
-        public HomeController(ILogger<HomeController> logger, UserManager<User> userManager)
+        public HomeController(UserManager<User> userManager,
+            IPlayer playerRepository, ITeam teamRepository)
         {
             _userManager = userManager;
-            _logger = logger;
+            _playerRepository = playerRepository;
+            _teamRepository = teamRepository;
         } // end logger
 
         public IActionResult Index()
@@ -26,13 +28,22 @@ namespace SoftballStats.Controllers
             {
                 if (User.Identity.IsAuthenticated)
                 {
-                    //HomeViewModel homeViewModel = new HomeViewModel
-                    //{
-                    //    Players = _playerRepository.GetPlayersAsync(_userManager.GetUserId(User)).Result,
-                    //    Teams = _teamRepository.GetTeamsAsync(_userManager.GetUserId(User)).Result
-                    //};
+                    HomeViewModel homeViewModel = new HomeViewModel
+                    {
+                        Players = _playerRepository.GetPlayersAsync(_userManager.GetUserId(User)).Result,
+                        Teams = _teamRepository.GetTeamsAsync(_userManager.GetUserId(User)).Result
+                    };
 
-                    return View(/*homeViewModel*/);
+                    if (homeViewModel.Players == null)
+                    {
+                        return RedirectToAction("Add", "Player");
+                    }
+                    if(homeViewModel.Teams == null)
+                    {
+                        return RedirectToAction("Add", "Team");
+                    }
+
+                    return View(homeViewModel);
                 }
                 else
                 {
