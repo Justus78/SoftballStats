@@ -4,6 +4,9 @@ using SoftballStats.Repositories;
 using SoftballStats.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using SoftballStats.Models;
+using SoftballStats.Services;
+using Microsoft.AspNetCore.SignalR;
+using SoftballStats.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +23,16 @@ builder.Services.AddDbContext<StatContext>(options =>
 builder.Services.AddScoped<IPlayer, PlayerRepository>();
 builder.Services.AddScoped<ITeam, TeamRepository>();
 builder.Services.AddScoped<IStats, StatRepository>();
+
+// add services for the interface and service to work with Cloudinary
+builder.Services.AddScoped<IPhotoService, PhotoService>();
+
+// add services for the connection string with Cloudinary
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
+builder.Services.AddDbContext<StatContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection"))
+);
 
 // identity framework
 builder.Services.AddIdentity<User, IdentityRole>

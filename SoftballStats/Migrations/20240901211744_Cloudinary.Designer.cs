@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SoftballStats.Data;
 
@@ -11,9 +12,11 @@ using SoftballStats.Data;
 namespace SoftballStats.Migrations
 {
     [DbContext(typeof(StatContext))]
-    partial class StatContextModelSnapshot : ModelSnapshot
+    [Migration("20240901211744_Cloudinary")]
+    partial class Cloudinary
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

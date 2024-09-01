@@ -12,6 +12,7 @@ namespace SoftballStats.Models
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
+        public string Image { get; set; }   
         [Required]
         public int Number { get; set; }
         public string? Position { get; set; }
