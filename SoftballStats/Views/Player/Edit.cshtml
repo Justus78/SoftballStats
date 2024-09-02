@@ -1,25 +1,37 @@
-﻿@model PlayerViewModel
+﻿@model EditPlayerViewModel
 @using SoftballStats.ViewModels
 
 <h1> Edit @Model.FirstName @Model.LastName</h1>
 
-<form asp-action="Edit" asp-controller="Player" method="post">
+<form asp-action="Edit" asp-controller="Player" method="post" enctype="multipart/form-data">
+
     <input type="hidden" id="PlayerID" name="PlayerID" asp-for="PlayerID" />
     <input type="hidden" id="UserId" name="UserId" asp-for="UserId" />
+
     <div class="mb-3">
         <label asp-for="FirstName" class="form-label">First Name</label>
         <input type="text" asp-for="FirstName" class="form-control" placeholder="First name" />
         <span asp-validation-for="FirstName" class="text-danger"></span>
     </div>
+
     <div class="mb-3">
         <label asp-for="LastName" class="form-label">Last Name</label>
         <input type="text" asp-for="LastName" class="form-control" placeholder="Last name" />
         <span asp-validation-for="LastName" class="text-danger"></span>
-    </div><div class="mb-3">
+    </div>
+    
+    <div class="mb-3">
+        <label asp-for="Image" class="form-label">Profile Picture</label>
+        <input type="file" asp-for="Image" class="form-control" placeholder="profile picture" />
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
         <label asp-for="Number" class="form-label">Number</label>
         <input type="text" asp-for="Number" class="form-control" placeholder="Number" />
         <span asp-validation-for="Number" class="text-danger"></span>
     </div>
+
     <div class="mb-3">
         <label asp-for="Position" class="form-label">Position</label>
         <input type="text" asp-for="Position" class="form-control" placeholder="Position" />

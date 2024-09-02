@@ -21,6 +21,11 @@ namespace SoftballStats.Repositories
             return await _context.Players.Where(u => u.UserID == id).ToListAsync();
         }
 
+        public async Task<Player> GetPlayerAsyncNoTracking(int id)
+        {
+            return await _context.Players.AsNoTracking().FirstOrDefaultAsync(p => p.PlayerID == id);
+        }
+
         public async Task<Player> GetPlayerAsync(int id)
         {
             return await _context.Players.FirstOrDefaultAsync(p => p.PlayerID == id);
@@ -49,5 +54,7 @@ namespace SoftballStats.Repositories
             var saved = _context.SaveChanges();
             return saved > 0 ? true : false;
         }
+
+        
     } // end repository
 } // end namespace

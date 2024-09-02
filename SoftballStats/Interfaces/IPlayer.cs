@@ -6,6 +6,7 @@ namespace SoftballStats.Interfaces
     {
         Task<IEnumerable<Player>> GetPlayersAsync(string id);
         Task<Player> GetPlayerAsync(int id);
+        Task<Player> GetPlayerAsyncNoTracking(int id);
 
         bool Add(Player player);
         bool Update(Player player);
