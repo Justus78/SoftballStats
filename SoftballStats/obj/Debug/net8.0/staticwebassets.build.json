@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/FoKqz06blOtJbLFQDk6gBHWPIiRS4Mhzn91wMUQm3E=",
+  "Hash": "9KaCQFM0Y3d0vAnUOLwcTrfn/b/gQJTc3jOCMttt18Y=",
   "Source": "SoftballStats",
   "BasePath": "_content/SoftballStats",
   "Mode": "Default",
@@ -150,6 +150,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\Images\\altProfilePic.jpg",
+      "SourceId": "SoftballStats",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\",
+      "BasePath": "_content/SoftballStats",
+      "RelativePath": "Images/altProfilePic.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\altProfilePic.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\Images\\bg-01.jpg",
       "SourceId": "SoftballStats",
       "SourceType": "Discovered",
@@ -167,25 +186,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\bg-01.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\Images\\th.jpg",
-      "SourceId": "SoftballStats",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\",
-      "BasePath": "_content/SoftballStats",
-      "RelativePath": "Images/th.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\th.jpg"
     },
     {
       "Identity": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\js\\site.js",
