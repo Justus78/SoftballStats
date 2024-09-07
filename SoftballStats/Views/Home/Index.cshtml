@@ -30,8 +30,10 @@
     </div>
     <div class="content">       
         
-        <h1>Players</h1>
-        <a asp-controller="Player" asp-action="Add" class="btn btn-primary">Create</a>
+        <div class="main-header">
+            <h1 class="">Players</h1>
+            <a asp-controller="Player" asp-action="Add" class="btn-create">Add New Player</a>
+        </div>
 
         <div class="player-grid">
             @foreach (var item in Model.Players)
@@ -58,9 +60,9 @@
                             @if (User.Identity.IsAuthenticated)
                             {
                                 <a asp-controller="Player" asp-action="Edit" asp-route-id="@item.PlayerID"
-                                    class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    class="btn-edit">Edit</a>
                                 <a asp-controller="Player" asp-action="Delete" asp-route-id="@item.PlayerID"
-                                    class="btn btn-sm btn-outline-secondary">Delete</a>
+                                    class="btn-delete">X</a>
                             }
                         </div>
                     </div>

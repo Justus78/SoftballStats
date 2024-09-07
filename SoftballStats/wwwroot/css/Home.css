@@ -3,6 +3,20 @@
     margin: 0;
     padding: 0;
     display: flex;
+    background: linear-gradient(to right, #16A085, #4FD03F);
+}
+
+.main-header {
+    background-color: yellowgreen;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    
 }
 
 .sidebar {
@@ -53,7 +67,7 @@ margin: 15px 0;
     margin-left: 300px;
     padding: 20px;
     width: 100%;
-    transition: margin-left 0.3s ease-in-out;
+    transition: margin-left 0.3s ease-in-out;    
 }
 
 /* styles for player items */
@@ -61,15 +75,16 @@ margin: 15px 0;
 .player-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 50px;
 }
 
 .player-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(to right, #16A085, #4FD03F);
+    background: linear-gradient(to right, white, white);
     border-radius: 5%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
@@ -80,6 +95,7 @@ margin: 15px 0;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
+    border: 5px solid brown;
 }
 
 .player-info {
@@ -89,6 +105,75 @@ margin: 15px 0;
 }
 
 .team-name {
+}
+
+.btn-create {
+    background: linear-gradient(to right, #f06, #ffba08);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-create a {
+      color: white;
+    text-decoration: none;
+    
+}
+ .btn-create:hover {
+       background: linear-gradient(to right, #ffba08, #f06);
+ }
+
+.btn-edit {
+    background: linear-gradient(to right, #f06, #ffba08);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.btn-edit a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-edit:hover {
+    background: linear-gradient(to right, #ffba08, #f06);
+}
+
+.btn-delete {
+    background: red;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    top: 5px;   
+    right: 5px;
 }
 
 /* end styles for player items */
