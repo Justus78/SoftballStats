@@ -3,9 +3,6 @@ using SoftballStats.Models;
 using SoftballStats.Interfaces;
 using SoftballStats.ViewModels;
 using Microsoft.AspNetCore.Identity;
-using SoftballStats.Services;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace SoftballStats.Controllers
 {

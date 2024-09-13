@@ -17,8 +17,8 @@ namespace SoftballStats.Repositories
         } // end constructor
 
         public async Task<IEnumerable<Player>> GetPlayersAsync(string id)
-        {
-            return await _context.Players.Where(u => u.UserID == id).ToListAsync();
+        {            
+            return await _context.Players.Include(s => s.GameStats).Where(u => u.UserID == id).ToListAsync();
         }
 
         public async Task<Player> GetPlayerAsyncNoTracking(int id)
