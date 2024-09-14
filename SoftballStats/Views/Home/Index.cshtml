@@ -23,9 +23,13 @@
         </div>
         <ul class="sidebar-menu">
             <li><a href="#home">Home</a></li>
+            <hr />
             <li><a href="#services">Services</a></li>
+            <hr />
             <li><a href="#about">About</a></li>
+            <hr />
             <li><a href="#contact">Contact</a></li>
+            <hr />
         </ul>
     </div>
     <div class="content">       
@@ -38,37 +42,55 @@
         <div class="player-grid">
             @foreach (var item in Model.Players)
             {
+                // Sum total At Bats and Hits across all games for the player
+                var totalAtBats = item.GameStats.Sum(gs => gs.AtBats);
+                var totalHits = item.GameStats.Sum(gs => gs.Hits);
+                var battingAverage = totalAtBats > 0 ? ((decimal)(totalHits / totalAtBats)).ToString("F3") : "N/A"; // Avoid division by zero
+
                 <div class="player-item">
                     <!-- check for profile pic-->
-                    @if (item.Image == null || item.Image ==  "")
+                    @if (string.IsNullOrWhiteSpace(item.Image))
                     {
                         <img class="player-image" src="~/Images/altProfilePic.jpg" />
                     }
                     else
                     {
-                        <img class="player-image" src="@item.Image" alt="Card Image Cap" />
-
+                        <img class="player-image" src="@item.Image" alt="Player Image" />
                     }
+
                     <div class="player-info">
-                        <p class="player-name">@item.FirstName @item.LastName</p>
+                        <p class="player-name">Name: @item.FirstName @item.LastName</p>
+
                         @if (item.Team != null)
                         {
-                            <p class="team-name">@item.Team.TeamName</p>
+                            <p class="team-name">Team: @item.Team.TeamName</p>
                         }
-                        <div class="button-group">
+                        else
+                        {
+                            <p class="team-name">Team: Free Agent</p>
+                        }
 
+                        @if (item.GameStats != null && item.GameStats.Any())
+                        {
+                            <p>Runs: @item.GameStats.Sum(r => r.Runs)</p>
+                            <p>Batting Average: @battingAverage</p> <!-- No need for .ToString() here -->
+                        } else
+                        {
+                            <p>No game stats available</p>
+                        }
+
+                        <div class="button-group">
                             @if (User.Identity.IsAuthenticated)
                             {
-                                <a asp-controller="Player" asp-action="Edit" asp-route-id="@item.PlayerID"
-                                    class="btn-edit">Edit</a>
-                                <a asp-controller="Player" asp-action="Delete" asp-route-id="@item.PlayerID"
-                                    class="btn-delete">X</a>
+                                <a asp-controller="Player" asp-action="Edit" asp-route-id="@item.PlayerID" class="btn-edit">Edit</a>
+                                <a asp-controller="Player" asp-action="Delete" asp-route-id="@item.PlayerID" class="btn-delete">X</a>
                             }
                         </div>
                     </div>
-                </div>                        
-            }@*End foreach*@
+                </div>
+            }
         </div>
+
     </div>
 
     <script>

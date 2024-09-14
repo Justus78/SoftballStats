@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace SoftballStats.Migrations
 {
     /// <inheritdoc />
-    public partial class IDFramework : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -156,6 +156,89 @@ namespace SoftballStats.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Teams",
+                columns: table => new
+                {
+                    TeamID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    TeamName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserID = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Teams", x => x.TeamID);
+                    table.ForeignKey(
+                        name: "FK_Teams_AspNetUsers_UserID",
+                        column: x => x.UserID,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Players",
+                columns: table => new
+                {
+                    PlayerID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Number = table.Column<int>(type: "int", nullable: false),
+                    Position = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    TeamID = table.Column<int>(type: "int", nullable: true),
+                    UserID = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Players", x => x.PlayerID);
+                    table.ForeignKey(
+                        name: "FK_Players_AspNetUsers_UserID",
+                        column: x => x.UserID,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Players_Teams_TeamID",
+                        column: x => x.TeamID,
+                        principalTable: "Teams",
+                        principalColumn: "TeamID");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "GameStats",
+                columns: table => new
+                {
+                    StatsID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    PlayerID = table.Column<int>(type: "int", nullable: true),
+                    Opponent = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    GameDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    AtBats = table.Column<int>(type: "int", nullable: true),
+                    Hits = table.Column<int>(type: "int", nullable: true),
+                    Runs = table.Column<int>(type: "int", nullable: true),
+                    RBIs = table.Column<int>(type: "int", nullable: true),
+                    Walks = table.Column<int>(type: "int", nullable: true),
+                    Strikeouts = table.Column<int>(type: "int", nullable: true),
+                    StolenBases = table.Column<int>(type: "int", nullable: true),
+                    Errors = table.Column<int>(type: "int", nullable: true),
+                    Singles = table.Column<int>(type: "int", nullable: true),
+                    Doubles = table.Column<int>(type: "int", nullable: true),
+                    Triples = table.Column<int>(type: "int", nullable: true),
+                    HomeRuns = table.Column<int>(type: "int", nullable: true),
+                    HitByPitch = table.Column<int>(type: "int", nullable: true),
+                    SacrificeFly = table.Column<int>(type: "int", nullable: true),
+                    SacrificeBunt = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_GameStats", x => x.StatsID);
+                    table.ForeignKey(
+                        name: "FK_GameStats_Players_PlayerID",
+                        column: x => x.PlayerID,
+                        principalTable: "Players",
+                        principalColumn: "PlayerID");
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -194,6 +277,26 @@ namespace SoftballStats.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_GameStats_PlayerID",
+                table: "GameStats",
+                column: "PlayerID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Players_TeamID",
+                table: "Players",
+                column: "TeamID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Players_UserID",
+                table: "Players",
+                column: "UserID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Teams_UserID",
+                table: "Teams",
+                column: "UserID");
         }
 
         /// <inheritdoc />
@@ -215,7 +318,16 @@ namespace SoftballStats.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "GameStats");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
+
+            migrationBuilder.DropTable(
+                name: "Players");
+
+            migrationBuilder.DropTable(
+                name: "Teams");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");

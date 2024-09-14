@@ -237,7 +237,6 @@ namespace SoftballStats.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
@@ -250,7 +249,7 @@ namespace SoftballStats.Migrations
                     b.Property<string>("Position")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TeamID")
+                    b.Property<int?>("TeamID")
                         .HasColumnType("int");
 
                     b.Property<string>("UserID")
@@ -406,7 +405,7 @@ namespace SoftballStats.Migrations
             modelBuilder.Entity("SoftballStats.Models.GameStats", b =>
                 {
                     b.HasOne("SoftballStats.Models.Player", "Player")
-                        .WithMany()
+                        .WithMany("GameStats")
                         .HasForeignKey("PlayerID");
 
                     b.Navigation("Player");
@@ -416,9 +415,7 @@ namespace SoftballStats.Migrations
                 {
                     b.HasOne("SoftballStats.Models.Team", "Team")
                         .WithMany("Players")
-                        .HasForeignKey("TeamID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TeamID");
 
                     b.HasOne("SoftballStats.Models.User", "User")
                         .WithMany()
@@ -436,6 +433,11 @@ namespace SoftballStats.Migrations
                         .HasForeignKey("UserID");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("SoftballStats.Models.Player", b =>
+                {
+                    b.Navigation("GameStats");
                 });
 
             modelBuilder.Entity("SoftballStats.Models.Team", b =>
