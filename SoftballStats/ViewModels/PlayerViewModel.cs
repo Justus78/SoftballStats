@@ -12,7 +12,7 @@ namespace SoftballStats.ViewModels
         public int Number { get; set; }
         public string? Position { get; set; }
         [ValidateNever]
-        public List<Team>? Teams { get; set; }
+        public List<Team>? Teams { get; set; } = null;
         public int TeamID { get; set; }
         public string UserId { get; set; }
     } // end view model 

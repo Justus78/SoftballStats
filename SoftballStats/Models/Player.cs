@@ -17,7 +17,7 @@ namespace SoftballStats.Models
         public int Number { get; set; }
         public string? Position { get; set; }
         [ForeignKey("Team")]
-        public int TeamID { get; set; }
+        public int? TeamID { get; set; }
         [ValidateNever]
         public Team? Team { get; set; }
         [ValidateNever]

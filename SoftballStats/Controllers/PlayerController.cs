@@ -3,6 +3,7 @@ using SoftballStats.Models;
 using SoftballStats.Interfaces;
 using SoftballStats.ViewModels;
 using Microsoft.AspNetCore.Identity;
+using CloudinaryDotNet.Actions;
 
 namespace SoftballStats.Controllers
 {
@@ -48,12 +49,13 @@ namespace SoftballStats.Controllers
         } // end player Add get
 
         [HttpPost]
-        public async Task<IActionResult> Add(PlayerViewModel playerVM, int selectedTeam)
+        public async Task<IActionResult> Add(PlayerViewModel playerVM, int? selectedTeam)
         {
-
             if (ModelState.IsValid)
             {
-                var result = await _photoService.AddPhotoAsync(playerVM.Image);
+
+                
+                var result = await _photoService.AddPhotoAsync(playerVM.Image);                
 
                 Player player = new Player
                 {
@@ -63,7 +65,7 @@ namespace SoftballStats.Controllers
                     Image = result.Url.ToString(),
                     Number = playerVM.Number,
                     Position = playerVM.Position,
-                    TeamID = selectedTeam,
+                    TeamID = selectedTeam ?? null,
                     UserID = playerVM.UserId
                 };
                 _playerRepository.Add(player);
