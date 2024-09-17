@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\SoftballStats.csproj": {}
+    "C:\\Users\\stars\\OneDrive\\Desktop\\SoftballStats\\SoftballStats\\SoftballStats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\SoftballStats.csproj": {
+    "C:\\Users\\stars\\OneDrive\\Desktop\\SoftballStats\\SoftballStats\\SoftballStats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\SoftballStats.csproj",
+        "projectUniqueName": "C:\\Users\\stars\\OneDrive\\Desktop\\SoftballStats\\SoftballStats\\SoftballStats.csproj",
         "projectName": "SoftballStats",
-        "projectPath": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\SoftballStats.csproj",
-        "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\obj\\",
+        "projectPath": "C:\\Users\\stars\\OneDrive\\Desktop\\SoftballStats\\SoftballStats\\SoftballStats.csproj",
+        "packagesPath": "C:\\Users\\stars\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stars\\OneDrive\\Desktop\\SoftballStats\\SoftballStats\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\stars\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,48 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "CloudinaryDotNet": {
-              "target": "Package",
-              "version": "[1.26.2, )"
-            },
-            "Microsoft.AspNet.Identity.Owin": {
-              "target": "Package",
-              "version": "[2.2.4, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.Owin.Host.SystemWeb": {
-              "target": "Package",
-              "version": "[4.2.2, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -92,15 +54,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
