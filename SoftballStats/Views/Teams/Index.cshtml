@@ -1,28 +1,82 @@
 ﻿@model IEnumerable<Team>
 
-    @{
+@{
     ViewData["Title"] = "Teams";
 }
+@{     
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softball Stats</title>
+    <link rel="stylesheet" href="~/css/teamIndex.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+            <hr />
+            <li><a asp-action="Index" asp-controller="Teams">Teams</a></li>
+            <hr />
+            <li><a href="#about">About</a></li>
+            <hr />
+            <li><a href="#contact">Contact</a></li>
+            <hr />
+        </ul>
+    </div>
+    <div class="content">
+        <div class="main-header">
+            <h1 class="">Players</h1>
+            <a asp-controller="Teams" asp-action="Add" class="btn-create">Add New Team</a>
+        </div>
 
-<h1><a asp-controller="Teams" asp-action="Add">Add new team</a></h1>
+        <div class="team-grid">
 
-<table class="table table-striped table-bordered">
-    <thead>
-        <tr>
-            <th>Team Name</th>
-            <th>Options</th>
-        </tr
-    </thead>
-    <tbody>
-        @foreach (var team in Model)
-        {
-            <tr>
-                <td>@team.TeamName</td>
-                <td>
-                    <a class="btn btn-primary" asp-controller="Teams" asp-action="Edit" asp-route-id="@team.TeamID">Edit</a>
-                    <a class="btn btn-primary" asp-controller="Teams" asp-action="Delete" asp-route-id="@team.TeamID">Delete</a>
-                </td>
-            </tr>
-        }
-</table>
+            @foreach (var item in Model)
+            {
+                <div class="team-item">
+                    <h2>@item.TeamName</h2>
+                    <a asp-controller="Teams" asp-action="Edit" asp-route-id="@item.TeamID" class="btn-edit">Edit</a>
+                    <a asp-controller="Teams" asp-action="Delete" asp-route-id="@item.TeamID" class="btn-delete">Delete</a>
+                </div>    
+            }
+        </div>
+
+        @* <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Team Name</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var team in Model)
+                {
+                    <tr>
+                        <td>@team.TeamName</td>
+                        <td>
+                            <a class="btn btn-primary" asp-controller="Teams" asp-action="Edit" asp-route-id="@team.TeamID">Edit</a>
+                            <a class="btn btn-primary" asp-controller="Teams" asp-action="Delete" asp-route-id="@team.TeamID">Delete</a>
+                        </td>
+                    </tr>
+                }
+        </table> *@
+    </div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sidebar = document.querySelector('.sidebar');
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
    

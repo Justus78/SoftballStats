@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\css\\teamIndex.css",
+      "PackagePath": "staticwebassets\\css\\teamIndex.css"
+    },
+    {
       "Id": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

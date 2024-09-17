@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9KaCQFM0Y3d0vAnUOLwcTrfn/b/gQJTc3jOCMttt18Y=",
+  "Hash": "v4Ije8YWu9JntryBVCsbYUOljZG0Bbz7+eFAGHQykdQ=",
   "Source": "SoftballStats",
   "BasePath": "_content/SoftballStats",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\css\\teamIndex.css",
+      "SourceId": "SoftballStats",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\",
+      "BasePath": "_content/SoftballStats",
+      "RelativePath": "css/teamIndex.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\teamIndex.css"
     },
     {
       "Identity": "C:\\Users\\Matt\\Desktop\\SoftballStats\\SoftballStats\\wwwroot\\favicon.ico",

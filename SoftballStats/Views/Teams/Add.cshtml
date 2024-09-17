@@ -2,10 +2,15 @@
 
 <h1> Add a new team below</h1>
 
-<form asp-action="Add" asp-controller="Teams" method="post">
+<form asp-action="Add" asp-controller="Teams" method="post" enctype="multipart/form-data">
     <input type="hidden" id="TeamID" name="TeamID" asp-for="TeamID" />
     <input type="hidden" id="UserId" name="UserId" asp-for="UserID" />
 
+    <div class="mb-3">
+        <label asp-for="Image" class="form-label">Team Logo</label>
+        <input type="file" asp-for="Image" class="form-control" placeholder="Team Logo" />
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
 
     <div class="mb-3">
         <label asp-for="TeamName" class="form-label">Team Name</label>
