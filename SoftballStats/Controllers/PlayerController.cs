@@ -127,7 +127,7 @@ namespace SoftballStats.Controllers
                     }
                     catch
                     {
-                        // if error, return to the edit view with the clubVM
+                        // if error, return to the edit view with the playerVM
                         ModelState.AddModelError("", "Could not delete photo");
                         return View(playerVM);
                     }

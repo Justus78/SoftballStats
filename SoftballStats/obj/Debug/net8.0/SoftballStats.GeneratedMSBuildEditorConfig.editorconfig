@@ -9,95 +9,95 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SoftballStats
 build_property.RootNamespace = SoftballStats
-build_property.ProjectDir = C:\Users\Matt\Desktop\SoftballStats\SoftballStats\
+build_property.ProjectDir = C:\Users\stars\OneDrive\Desktop\SoftballStats\SoftballStats\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Matt\Desktop\SoftballStats\SoftballStats
+build_property.MSBuildProjectDirectory = C:\Users\stars\OneDrive\Desktop\SoftballStats\SoftballStats
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Account/Login.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Account/Register.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Home/Index.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Player/Add.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Player/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Player/Delete.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Player/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Player/Edit.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Player/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Player/Index.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Player/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Stats/AddStats.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Stats/AddStats.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcQWRkU3RhdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Stats/Delete.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Stats/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Stats/Edit.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Stats/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Stats/Games.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Stats/Games.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcR2FtZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Stats/PlayerStats.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Stats/PlayerStats.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHNcUGxheWVyU3RhdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Teams/Add.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Teams/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Teams/Delete.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Teams/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Teams/Edit.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Teams/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Teams/Index.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Teams/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/User/Index.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/_ViewImports.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/_ViewStart.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Matt/Desktop/SoftballStats/SoftballStats/Views/Shared/_Layout.cshtml]
+[C:/Users/stars/OneDrive/Desktop/SoftballStats/SoftballStats/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-l7gibn74u9
