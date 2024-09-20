@@ -24,11 +24,7 @@
             <li><a asp-action="Index" asp-controller="Home">Home</a></li>
             <hr />
             <li><a asp-action="Index" asp-controller="Teams">Teams</a></li>
-            <hr />
-            <li><a href="#about">About</a></li>
-            <hr />
-            <li><a href="#contact">Contact</a></li>
-            <hr />
+            <hr />           
         </ul>
     </div>
     <div class="content">
@@ -42,9 +38,22 @@
             @foreach (var item in Model)
             {
                 <div class="team-item">
-                    <h2>@item.TeamName</h2>
-                    <a asp-controller="Teams" asp-action="Edit" asp-route-id="@item.TeamID" class="btn-edit">Edit</a>
-                    <a asp-controller="Teams" asp-action="Delete" asp-route-id="@item.TeamID" class="btn-delete">Delete</a>
+
+                    <!-- check for profile pic-->
+                    @if (string.IsNullOrWhiteSpace(item.Image))
+                    {
+                        <img class="team-image" src="~/Images/altProfilePic.jpg" />
+                    }
+                    else
+                    {
+                        <img class="team-image" src="@item.Image" alt="Player Image" />
+                    }
+
+                    <div class="team-info">
+                        <h2>@item.TeamName</h2>
+                        <a asp-controller="Teams" asp-action="Edit" asp-route-id="@item.TeamID" class="btn-edit">Edit</a>
+                        <a asp-controller="Teams" asp-action="Delete" asp-route-id="@item.TeamID" class="btn-delete">X</a>
+                    </div>
                 </div>    
             }
         </div>

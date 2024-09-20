@@ -19,35 +19,49 @@ namespace SoftballStats.Repositories
 
         public async Task<IEnumerable<Team>> GetTeamsAsync(string id)
         {
+            // get the teams for the user
             return await _context.Teams.Where(u => u.UserID == id).ToListAsync();
         }
 
         public async Task<Team> GetTeamAsync(int id)
         {
+            // get the team
             return await _context.Teams.FirstOrDefaultAsync(t => t.TeamID == id);
         }
 
         public bool Add(Team team)
         {
+            // add the team
             _context.Teams.Add(team);
+
+            // save the changes
             return Save();
         }
 
         public bool Update(Team team)
         {
+            // update the team
             _context.Teams.Update(team);
+
+            // save the changes
             return Save();
         }
 
         public bool Delete(Team team)
         {
+            // remove the team
             _context.Remove(team);
+
+            // save the changes
             return Save();
         }
 
         public bool Save()
         {
+            // save the changes
             var saved = _context.SaveChanges();
+
+            // return true if saved is greater than 0
             return saved > 0 ? true : false;
         }
     } // end repository

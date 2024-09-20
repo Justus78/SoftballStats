@@ -1,5 +1,6 @@
 ﻿namespace SoftballStats.Helpers
 {
+    // cloudinary settings class
     public class CloudinarySettings
     {
         public string CloudName { get; set; }
