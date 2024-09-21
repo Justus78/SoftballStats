@@ -29,6 +29,12 @@ namespace SoftballStats.Repositories
             return await _context.Teams.FirstOrDefaultAsync(t => t.TeamID == id);
         }
 
+        public async Task<Team> GetTeamAsyncNoTracking(int id)
+        {
+            // get the team with no tracking
+            return await _context.Teams.AsNoTracking().FirstOrDefaultAsync(t => t.TeamID == id);
+        }
+
         public bool Add(Team team)
         {
             // add the team

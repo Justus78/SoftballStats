@@ -130,6 +130,8 @@ namespace SoftballStats.Controllers
                 // check if the image is null
                 if(playerVM.Image == null) // dont change profile pic
                 {
+                    // get the player to update to use the same image url
+                    var playerToUpdate  = await _playerRepository.GetPlayerAsyncNoTracking(playerVM.PlayerID); 
 
                     // create the player to update
                     Player player = new Player
@@ -140,7 +142,8 @@ namespace SoftballStats.Controllers
                         Number = playerVM.Number,
                         Position = playerVM.Position,
                         TeamID = selectedTeam,
-                        UserID = playerVM.UserId
+                        UserID = playerVM.UserId,
+                        Image = playerToUpdate.Image // keep the same image
                     };
 
                     _playerRepository.Update(player); // update the player
@@ -154,7 +157,7 @@ namespace SoftballStats.Controllers
                 // check if the userPlayer is not null
                 if (userPlayer != null)
                 {
-                    // try to delete the current image from cloudina
+                    // try to delete the current image from cloudinary for this player
                     try
                     {
                         // check if the image is not null

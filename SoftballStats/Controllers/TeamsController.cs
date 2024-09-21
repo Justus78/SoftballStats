@@ -76,6 +76,7 @@ namespace SoftballStats.Controllers
             }
 
             // if model state is not valid, return to the view with the teamviewmodel
+
             // get the user
             var user = await _userManager.GetUserAsync(User);
 
@@ -133,38 +134,18 @@ namespace SoftballStats.Controllers
             // check if the model state is valid
             if (ModelState.IsValid)
             {
-                // get the team with the id
-                var userTeam = await _teamRepository.GetTeamAsync(editVM.TeamID);
-
-                // check if the team is not null
-                if (userTeam != null)
+                // check if the image is null
+                if (editVM.Image == null)
                 {
-                    // check if the image is not null
-                    if (editVM.Image != null)
-                    {
-                        
-                        try
-                        {
-                            // delete the current image from cloudinary for this team
-                            await _photoService.DeletePhotoAsync(userTeam.Image);
-                        }
-                        catch
-                        {
-                            // if error, return to the edit view with the clubVM
-                            ModelState.AddModelError("", "Could not delete photo");
-                            return View(editVM);
-                        }
-                    }
-                  
-                    // add the new photo to cloudinary
-                    var result = await _photoService.AddPhotoAsync(editVM.Image);
+                    // get the team to update with the id from the DB
+                    var teamToUpdate = await _teamRepository.GetTeamAsyncNoTracking(editVM.TeamID);
 
-                    // create a new team with the cloudinary result url
+                    // create a new team with the image from the team to update
                     Team team = new Team
                     {
                         TeamID = editVM.TeamID,
                         TeamName = editVM.TeamName,
-                        Image = result.Url.ToString(),
+                        Image = teamToUpdate.Image,
                         UserID = editVM.UserID
                     };
 
@@ -173,8 +154,54 @@ namespace SoftballStats.Controllers
 
                     // redirect to index
                     return RedirectToAction("Index");
+                } 
+                else // if the image is not null
+                {
+                    // get the team with the id from the DB
+                    var userTeam = await _teamRepository.GetTeamAsync(editVM.TeamID);
+
+                    // check if the team is not null
+                    if (userTeam != null)
+                    {
+                        // check if the image is not null
+                        if (editVM.Image != null)
+                        {
+                            // delete the current image from cloudinary for this team
+                            try
+                            {
+                                // delete the current image from cloudinary for this team
+                                await _photoService.DeletePhotoAsync(userTeam.Image);
+                            }
+                            catch
+                            {
+                                // if error, return to the edit view with the clubVM
+                                ModelState.AddModelError("", "Could not delete photo");
+                                
+                                // return the view with the editVM
+                                return View(editVM);
+                            }
+                        }
+                        
+                        // add the new photo to cloudinary
+                        var result = await _photoService.AddPhotoAsync(editVM.Image);
+                        
+                        // create a new team with the cloudinary result url
+                        Team team = new Team
+                        {
+                            TeamID = editVM.TeamID,
+                            TeamName = editVM.TeamName,
+                            Image = result.Url.ToString(),
+                            UserID = editVM.UserID
+                        };
+                        
+                        // update the team
+                        _teamRepository.Update(team);
+                        
+                        // redirect to index
+                        return RedirectToAction("Index");
+                    }
                 }
-            } // end modelstate if
+            } // end if modelstate is valid
 
             // if model state is not valid, return to the edit view with the editTeamViewModel
             EditTeamViewModel editTeamViewModel = new EditTeamViewModel
