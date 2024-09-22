@@ -28,11 +28,14 @@ namespace SoftballStats.Controllers
         public async Task<IActionResult> Index()
         {
 
-            var user = await _userManager.GetUserAsync(User); // get the user
+            //var user = await _userManager.GetUserAsync(User); // get the user
 
-            IEnumerable<Player> players = await _playerRepository.GetPlayersAsync(user.Id);// get the players for the user
+            //IEnumerable<Player> players = await _playerRepository.GetPlayersAsync(user.Id);// get the players for the user
 
-            return View(players); // return the view with the players for the specific user
+            //return View(players); // return the view with the players for the specific user
+
+            return RedirectToAction("Index", "Home");
+            
         } // end index get
 
         [HttpGet]
