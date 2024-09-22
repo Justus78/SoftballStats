@@ -158,7 +158,7 @@ namespace SoftballStats.Controllers
                 else // if the image is not null
                 {
                     // get the team with the id from the DB
-                    var userTeam = await _teamRepository.GetTeamAsync(editVM.TeamID);
+                    var userTeam = await _teamRepository.GetTeamAsyncNoTracking(editVM.TeamID);
 
                     // check if the team is not null
                     if (userTeam != null)

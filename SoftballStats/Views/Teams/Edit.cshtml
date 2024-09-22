@@ -1,24 +1,36 @@
 ﻿@model EditTeamViewModel
 @using SoftballStats.ViewModels
 
-<h1> Edit team  @Model.TeamName below</h1>
+<h1 class="text-center"> Edit Team @Model.TeamName</h1>
 
-<form asp-action="Edit" asp-controller="Teams" method="post" enctype="multipart/form-data">
-    <input type="hidden" id="TeamID" name="TeamID" asp-for="TeamID" />
-    <input type="hidden" id="UserID" name="UserID" asp-for="UserID" />
+<div class="container d-flex justify-content-center">
+    <form asp-action="Edit" asp-controller="Teams" method="post" enctype="multipart/form-data" class="w-50">
+        <input type="hidden" id="TeamID" name="TeamID" asp-for="TeamID" />
+        <input type="hidden" id="UserID" name="UserID" asp-for="UserID" />
 
-    <div class="mb-3">
-        <label asp-for="TeamName" class="form-label">Team Name</label>
-        <input type="text" asp-for="TeamName" class="form-control" placeholder="Team name" />
-        <span asp-validation-for="TeamName" class="text-danger"></span>
-    </div>
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label asp-for="Image" class="form-label">Team Logo</label>
+                    <input type="file" asp-for="Image" class="form-control" />
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+            </div>
 
-    <div class="mb-3">
-        <label asp-for="Image" class="form-label">Team Logo</label>
-        <input type="file" asp-for="Image" class="form-control" />
-        <span asp-validation-for="Image" class="text-danger"></span>
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label asp-for="TeamName" class="form-label">Team Name</label>
+                    <input type="text" asp-for="TeamName" class="form-control" placeholder="Team name" />
+                    <span asp-validation-for="TeamName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
 
-    <div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</form>
+        <!-- Submit Button -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
