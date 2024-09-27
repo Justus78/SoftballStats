@@ -86,6 +86,7 @@
                                 <a asp-controller="Player" asp-action="Delete" asp-route-id="@item.PlayerID" class="btn-delete">X</a>
                             }
                         </div>
+                        <a asp-controller="Stats" asp-action="PlayerStats" asp-route-id="@item.PlayerID" class="btn-view">View Stats</a>
                     </div>
                 </div>
             }
